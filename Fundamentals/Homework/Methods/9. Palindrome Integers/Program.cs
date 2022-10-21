@@ -6,7 +6,19 @@ namespace _9._Palindrome_Integers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string n = Console.ReadLine();
+            while (n != "END")
+            {
+
+                Console.WriteLine(IsItPalindrome(n));
+
+                n = Console.ReadLine();
+            }
+        }
+        static bool IsItPalindrome(string a)
+        {
+            return a[0] == a[a.Length - 1];
+
         }
     }
 }
